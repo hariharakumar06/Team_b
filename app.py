@@ -342,9 +342,7 @@ if st.button("🚀 Analyze Customer Churn Risk"):
         insights.append("📌 Fiber service users may churn due to competitive offers. Ensure service stability and competitive pricing.")
     if age < 25:
         insights.append("📌 Younger demographic detected: This age group is more price-sensitive and competitive-aware.")
-    if probability > 0.7:
-        insights.append("📌 CRITICAL ALERT: Extremely high churn risk! Immediate retention intervention recommended.")
-    elif probability > 0.5:
+    if probability > 0.5:
         insights.append("📌 Moderate risk detected: Proactive engagement recommended within 7 days.")
     else:
         insights.append("📌 Customer is stable: Continue monitoring satisfaction metrics quarterly.")
