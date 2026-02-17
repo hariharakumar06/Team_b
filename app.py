@@ -327,28 +327,7 @@ if st.button("🚀 Analyze Customer Churn Risk"):
     st.markdown("---")
 
     # ---------------- ACTIONABLE INSIGHTS ----------------
-    st.markdown("## AI-Generated Insights")
-    st.markdown("<br>", unsafe_allow_html=True)
-
-    insights = []
     
-    if tenure < 12:
-        insights.append("📌 Short tenure detected: New customers have 2.5x higher churn risk. Consider offering loyalty incentives.")
-    if contract == "Month-to-Month":
-        insights.append("📌 Month-to-Month contracts show 3x higher churn rates. Promote annual contract upgrades with discounts.")
-    if monthly_charges > 1500:
-        insights.append("📌 Premium pricing tier: Higher charges correlate with increased churn. Review value proposition and service quality.")
-    if internet == "Fiber":
-        insights.append("📌 Fiber service users may churn due to competitive offers. Ensure service stability and competitive pricing.")
-    if age < 25:
-        insights.append("📌 Younger demographic detected: This age group is more price-sensitive and competitive-aware.")
-    if probability > 0.5:
-        insights.append("📌 Moderate risk detected: Proactive engagement recommended within 7 days.")
-    else:
-        insights.append("📌 Customer is stable: Continue monitoring satisfaction metrics quarterly.")
-
-    for insight in insights:
-        st.markdown(f'<div class="insight-item">{insight}</div>', unsafe_allow_html=True)
     
     st.markdown('</div>', unsafe_allow_html=True)
 
