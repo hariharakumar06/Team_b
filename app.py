@@ -327,7 +327,7 @@ if st.button("🚀 Analyze Customer Churn Risk"):
     st.markdown("---")
 
     # ---------------- ACTIONABLE INSIGHTS ----------------
-    st.markdown("## 🧠 AI-Generated Insights")
+    st.markdown("## AI-Generated Insights")
     st.markdown("<br>", unsafe_allow_html=True)
 
     insights = []
